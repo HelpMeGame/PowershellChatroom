@@ -3,7 +3,7 @@ A basic chat room system using TCP Clients and Powershell
 
 ## How it works
 By using a threaded TCP Listener server, the chat room is able to maintain multiple connections, resources permitting.
-Each client has access to any server they wish, and by using the local username, you can create a set of nicknames that show in the server chat.
+Each client has access to any server they wish, if they are authenticated onit. By using the local username, you can also create a set of nicknames that show in the server chat.
 Anyone on the local internet network can connect, as long as the propper configurations are specified.
 
 A user may connect to a server by creating a new entry (typing "`new`" on the client start menu - these are stored in the local file `servers.txt`.). With the new server entry, they can connect by simply typing the index number displayed in the server list.
