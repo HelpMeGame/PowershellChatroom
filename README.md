@@ -6,7 +6,7 @@ By using a threaded TCP Listener server, the chat room is able to maintain multi
 Each client has access to any server they wish, if they are authenticated onit. By using the local username, you can also create a set of nicknames that show in the server chat.
 Anyone on the local internet network can connect, as long as the propper configurations are specified.
 
-A user may connect to a server by creating a new entry (typing "`new`" on the client start menu - these are stored in the local file `servers.txt`.). With the new server entry, they can connect by simply typing the index number displayed in the server list.
+A user may connect to a server by creating a new entry (typing "`new`" on the client start menu - these are stored in the local file `servers.txt`). With the new server entry, they can connect by simply typing the index number displayed in the server list.
 
 ## Starting a Server
 A server can be started through the client, by typing "`start`" on the selection menu. The server's settings are determined by the data found in the local file `config.txt`. After starting the server, the IP Address that can be connected to will be shown at the top of the console.
@@ -25,8 +25,8 @@ The default configuration is as follows:
 ```
 | Property | Usage | Possible Values |
 |-----|-----|-----|
-| `publicServer` | Marks the server as public, setting the port to `27016`, or private, setting it to `27015`. | `true` or `false` |
-| `shouldAuthenticate` | Decides whether or not the server should authenticate incoming users | `true` or `false` |
+| `publicServer` | Marks the server as public, setting the port to `27016`, or private, setting it to `27015`. This currently does nothing other than change the port of the server. | `true` or `false` |
+| `shouldAuthenticate` | Decides whether or not the server should authenticate incoming users. | `true` or `false` |
 | `returnMessages`| Sets the number of messages that the server returns to a client | Any integer greater than 0 (larger numbers will take more time to transfer.) |
 | `users` | Any username recorded in the `users` property will be authenticated, and will have their name replaced in the chat room with the given name. | `"string"`: `"string"` |
 
