@@ -6,8 +6,10 @@ By using a threaded TCP Listener server, the chat room is able to maintain multi
 Each client has access to any server they wish, and by using the local username, you can create a set of nicknames that show in the server chat.
 Anyone on the local internet network can connect, as long as the propper configurations are specified.
 
+A user may connect to a server by creating a new entry (typing "`new`" on the client start menu - these are stored in the local file `servers.txt`.). With the new server entry, they can connect by simply typing the index number displayed in the server list.
+
 ## Starting a Server
-A server can be started through the client, by typing "`start`" on the selection menu. The server's settings are determined by the data found in the local file `config.txt`.
+A server can be started through the client, by typing "`start`" on the selection menu. The server's settings are determined by the data found in the local file `config.txt`. After starting the server, the IP Address that can be connected to will be shown at the top of the console.
 
 ## Server Config
 The default configuration is as follows:
