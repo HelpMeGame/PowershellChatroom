@@ -31,6 +31,6 @@ The default configuration is as follows:
 | `users` | Any username recorded in the `users` property will be authenticated, and will have their name replaced in the chat room with the given name. | `"string"`: `"string"` |
 
 ## Disclaimer
-Obviously, this system isn't very secure. You can authenticate yourself as a user very easily by changing the `$username` variable that is passed in the client. Messages are sent through unencrypted JSON over the local network, and are easily intercepted. It is highly advised to *not* use this as a means of transfering sensitive information.
+This is a proof of concept, and this system obviously isn't very secure. You can authenticate yourself as a user very easily by changing the `$username` variable that is passed in the client. Messages are sent through unencrypted JSON over the local network, and are easily intercepted. It is highly advised to *not* use this as a means of transfering sensitive information.
 
 Along with the above mentioned security issues, the server by default has no form of content filtering. Users are able to freely send anything they wish, at any time the server is running.
