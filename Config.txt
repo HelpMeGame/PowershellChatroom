@@ -1,0 +1,7 @@
+{
+    "publicServer": false,
+    "shouldAuthenticate":  true,
+    "returnMessages":  20,
+    "users":  {
+              }
+}
