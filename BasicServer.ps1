@@ -13,10 +13,10 @@ function Load-Config {
 $config = Load-Config
 
 if ($config."publicServer") {
-    $hostPort = 27016
+    $hostPort = 27015
 }
 else {
-    $hostPort = 27015
+    $hostPort = 27016
 }
 
 $endpoint = New-Object System.Net.IPEndPoint ([IPAddress]::Any, $hostPort)

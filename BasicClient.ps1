@@ -46,12 +46,12 @@ function Main {
                 $pub = Read-Host "Is the server public? (Y/N)"
                     if ($pub -eq "y")
                     {
-                        $port = 27015
+                        $port = "27015"
                         break
                     }
                     elseif ($pub -eq "n")
                     {
-                        $port = 27016
+                        $port = "27016"
                         break
                     }
                 cls
@@ -153,7 +153,8 @@ function ConnectTo-Server {
     catch
     {
         cls
-        Read-Host Connection to the server could not be established. Press [Enter] to try again
+        Read-Host Connection to the server could not be established.
+        return
     }
     }
 
