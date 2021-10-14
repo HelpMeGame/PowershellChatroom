@@ -1,6 +1,9 @@
 # Powershell Chatroom
 A basic chat room system using TCP Clients and Powershell
 
+## Running the Chatroom
+To run the chatroom, download the source code, or the latest code from the release. Unzip the file, and right click `BasicClient.ps1`, then click `Run with Powershell`.
+
 ## How it works
 By using a threaded TCP Listener server, the chat room is able to maintain multiple connections, resources permitting.
 Each client has access to any server they wish, if they are authenticated onit. By using the local username, you can also create a set of nicknames that show in the server chat.
